@@ -12,7 +12,6 @@ public class AppCardDeliveryTest {
         return LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
-
     @Test
     void shouldTestForm(){
         open("http://localhost:9999");
