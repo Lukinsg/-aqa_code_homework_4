@@ -16,7 +16,7 @@ public class AppCardDeliveryTest {
     void shouldTestForm(){
         open("http://localhost:9999");
         $("[data-test-id='city'] input").setValue("Самара"); //data-test-id="city"
-        String date = generateDate(10);   // генерация даты — не ранее трёх дней с текущей даты
+        String date = generateDate(5);   // генерация даты — не ранее трёх дней с текущей даты
         SelenideElement data = $("[data-test-id='date'] input"); //data-test-id="date"
         data.sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         data.setValue(date);
